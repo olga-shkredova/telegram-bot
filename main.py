@@ -120,7 +120,7 @@ async def get_message(message):
                                parse_mode='Markdown')
 
     if message.text == "Статистика":
-        await bot.send_message(message.chat.id, text='ХОчешь просмотреть статистику бота', reply_markup=keyboard.stats,
+        await bot.send_message(message.chat.id, text='Хочешь посмотреть статистику', reply_markup=keyboard.stats,
                                parse_mode='Markdown')
 
     if message.text == "Разработчик":
@@ -133,7 +133,7 @@ async def get_message(message):
         await bot.send_message(message.chat.id, text=f'Сохдатель бота: {link, text}', parse_mode='HTML')
 
     if message.text == "Пользователь":
-        await bot.send_message(message.chat.id, text='ХОчешь просмотреть статистику бота',
+        await bot.send_message(message.chat.id, text='Хочешь посмотреть статистику',
                                reply_markup=keyboard.buttons_for_user, parse_mode='Markdown')
 
     if message.text == "Фото":
