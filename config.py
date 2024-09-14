@@ -1,0 +1,2 @@
+botkey = '7247690828:AAFPVcXGElXkkpZzJaxb-ZN5R7TgZaQUAqs'
+admin = 1009311877
