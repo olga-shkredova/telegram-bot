@@ -29,7 +29,7 @@ class MeInfo(StatesGroup):
 @dp.message_handler(Command("me"), state=None)  # создаем комупндк me для админа
 async def enter_MeInfo(message: types.Message):
     if message.chat.id == config.admin:
-        await message.answer("начинаем настройку \n"  # бот спрашивает ссылку
+        await message.answer("начинаем настройку \n"  
                              f"введите линк на ваш профиль")
 
         await MeInfo.Q1.set()
@@ -77,7 +77,7 @@ async def welcome(message):
         file.write(str(message.chat.id) + "\n")
         user.add(message.chat.id)
 
-    await bot.send_message(message.chat.id, f'привт *{message.from_user.first_name}* бот работает',
+    await bot.send_message(message.chat.id, f'привет *{message.from_user.first_name}* бот работает',
                            reply_markup=keyboard.start, parse_mode='Markdown')
 
 
@@ -130,7 +130,7 @@ async def get_message(message):
         text1 = open('text.txt', encoding="utf-8")
         text = text1.read()
 
-        await bot.send_message(message.chat.id, text=f'Сохдатель бота: {link, text}', parse_mode='HTML')
+        await bot.send_message(message.chat.id, text=f'Создатель бота: {link, text}', parse_mode='HTML')
 
     if message.text == "Пользователь":
         await bot.send_message(message.chat.id, text='Хочешь посмотреть статистику',

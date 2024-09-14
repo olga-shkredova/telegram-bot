@@ -4,10 +4,10 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 start = types.ReplyKeyboardMarkup(resize_keyboard=True)
 
 info = types.KeyboardButton("Информация")
-stats = types.KeyboardButton("Статистика")
-razrab = types.KeyboardButton("Разработчик")
+stats = types.KeyboardButton("Статистика бота")
+razrab = types.KeyboardButton("Разработчик бота")
 user = types.KeyboardButton("Пользователь")
-photo = types.KeyboardButton("Фото")
+photo = types.KeyboardButton("Смешная картинка")
 location = types.KeyboardButton("Моя геолокация", request_location=True)
 
 start.add(info, stats, user, photo, razrab, location)
