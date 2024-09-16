@@ -162,7 +162,7 @@ async def callback(call: types.CallbackQuery):
                                     text=f'Вот статистика: *{d}* человек', parse_mode='Markdown')
     else:
         await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                                    text=f'Ты балбеска', parse_mode='Markdown')
+                                    text=f'Нельзя', parse_mode='Markdown')
 
 
 @dp.callback_query_handler(text_contains=['cancel'])
